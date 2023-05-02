@@ -1,0 +1,5 @@
+{
+  "timestamp": "timestamp: ([0-9-\\ :.]+);",
+  "value": "value: ([0-9a-zA-Z.\\ -]+);",
+  "status": "status: ([01])"
+}

@@ -1,0 +1,126 @@
+{
+  "commonInterval": 2,
+  "dataPoints": [
+    {
+      "id": 0,
+      "dataType": "Boolean",
+      "dataName": "Boolean",
+      "dataItems": [
+        {
+          "timestamp": "2021-05-13T09:50:55.940Z",
+          "status": 1
+        },{
+          "timestamp": "2021-05-13T09:51:56.941Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:52:57.942Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:53:58.943Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:54:59.944Z",
+          "status": 1
+        }
+      ],
+      "sleepInterval": 1
+    },
+    {
+      "id": 1,
+      "dataType": "Int",
+      "dataName": "Int",
+      "dataItems": [
+        {
+          "timestamp": "2021-05-13T09:50:55.940Z",
+          "status": 1
+        },{
+          "timestamp": "2021-05-13T09:51:56.941Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:52:57.942Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:53:58.943Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:54:59.944Z",
+          "status": 1
+        }
+      ],
+      "sleepInterval": 0
+    },
+    {
+      "id": 2,
+      "dataType": "Long",
+      "dataName": "Long",
+      "dataItems": [
+        {
+          "timestamp": "2021-05-13T09:50:55.940Z",
+          "status": 1
+        },{
+          "timestamp": "2021-05-13T09:51:56.941Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:52:57.942Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:53:58.943Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:54:59.944Z",
+          "status": 1
+        }
+      ],
+      "sleepInterval": 2
+    },
+    {
+      "id": 3,
+      "dataType": "Double",
+      "dataName": "Double",
+      "dataItems": [
+        {
+          "timestamp": "2021-05-13T09:50:55.940Z",
+          "status": 1
+        },{
+          "timestamp": "2021-05-13T09:51:56.941Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:52:57.942Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:53:58.943Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:54:59.944Z",
+          "status": 1
+        }
+      ],
+      "sleepInterval": 4
+    },
+    {
+      "id": 4,
+      "dataType": "String",
+      "dataName": "String",
+      "maxLength": 255,
+      "dataItems": [
+        {
+          "timestamp": "2021-05-13T09:50:55.940Z",
+          "status": 1
+        },{
+          "timestamp": "2021-05-13T09:51:56.941Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:52:57.942Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:53:58.943Z",
+          "status": 0
+        },{
+          "timestamp": "2021-05-14T09:54:59.944Z",
+          "status": 1
+        }
+      ],
+      "sleepInterval": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": 0,
+    "receivingHubId": 0,
+    "receivingHubType": "OPC UA Client",
+    "sendingHubId": 0,
+    "sendingHubType": "MindSphere Agent",
+    "roadmap": [
+        {
+            "sourcePortId": 0,
+            "targetPortId": 0
+        },
+        {
+            "sourcePortId": 1,
+            "targetPortId": 1
+        },
+        {
+            "sourcePortId": 2,
+            "targetPortId": 2
+        },
+        {
+            "sourcePortId": 3,
+            "targetPortId": 3
+        },
+        {
+            "sourcePortId": 4,
+            "targetPortId": 4
+        },
+        {
+            "sourcePortId": 5,
+            "targetPortId": 5
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "id": 0,
+    "name": "Gateway_Automation (Peteris)",
+    "description": "Gateway_Automation (Peteris)",
+    "boardingConfiguration": {
+        "content": {
+            "baseUrl": "https://southgate.eu1.mindsphere.io",
+            "iat": "eyJraWQiOiJrZXktaWQtMSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJTQ0kiLCJzdWIiOiI0MzQxNmZhNzVlZDQ0MWNiODQwOTc5MmU0NWU1MGM1MSIsImF1ZCI6IkFJQU0iLCJpYXQiOjE2Mzk3NDAwMTYsIm5iZiI6MTYzOTc0MDAxNiwiZXhwIjoxNjQwMzQ0ODE2LCJqdGkiOiIwMzVmZjJjMS1mNWE5LTQyMmQtOGI5NS1iMzlmYTdjZTEwZTkiLCJzY29wZSI6IklBVCIsInRlbiI6ImFwcm90ZWNoIiwidGVuX2N0eCI6Im1haW4tdGVuYW50IiwiY2xpZW50X2NyZWRlbnRpYWxzX3Byb2ZpbGUiOlsiU0hBUkVEX1NFQ1JFVCJdLCJzY2hlbWFzIjpbInVybjpzaWVtZW5zOm1pbmRzcGhlcmU6djEiXX0.QAAAVRiWpEstV2OZRsg8buvH2HIGIyRla7gLw0Ry3lzQ7kpN-Ek7nWSZA7uyffIHiLIyR4zOCSDnK-hD0NZs19vo4N3FHz3ssMEN6V2NAoB3UkgwYFX3fcZZFxWAmQElaMm2eVUqkr3VCl_fLpuOfFBSZ_t9qrwRMyW2Qul-dPfkhZ8mBC3A1noI3B1fQufU0SeqLAnK-pLUpju_k4C7oYnbwrp3vi6A2gJkaUO6UeUf5IDqHcHkw0zyHWEuLy1cE71cxtXTcptBlrzmYKfT_RHsdd1HIYFbM-3Qz4pb3L92zMGLTwVljowg7oh2WdfoMWpWiYnGs4ad9EJSwD9V9g",
+            "clientCredentialProfile": [
+                "SHARED_SECRET"
+            ],
+            "clientId": "43416fa75ed441cb8409792e45e50c51",
+            "tenant": "aprotech"
+        },
+        "expiration": "2021-12-24T11:20:16.000Z"
+    },
+    "configurationId": "SystemTestConfig",
+    "limits": {
+        "maxStorageSize": 90000,
+        "itemGroupTimeout": 5,
+        "maxTimeseriesSize": 64,
+        "maxHttpPayloadSize": 16384
+    },
+    "dataPoints": [
+        {
+            "id": 0,
+            "name": "Boolean",
+            "dataPointId": "Boolean"
+        },
+        {
+            "id": 1,
+            "name": "Int",
+            "dataPointId": "Int"
+        },
+        {
+            "id": 2,
+            "name": "Long",
+            "dataPointId": "Long"
+        },
+        {
+            "id": 3,
+            "name": "Double",
+            "dataPointId": "Double"
+        },
+        {
+            "id": 4,
+            "name": "String",
+            "dataPointId": "String"
+        }
+    ]
+}

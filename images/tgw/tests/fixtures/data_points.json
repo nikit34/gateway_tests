@@ -1,0 +1,126 @@
+{
+  "commonInterval": 2,
+  "dataPoints": [
+    {
+      "id": 0,
+      "dataType": "Boolean",
+      "dataName": "Boolean",
+      "timestampSource": "server",
+      "dataItems": [
+        {
+          "value": true,
+          "status": 1
+        },{
+          "value": false,
+          "status": 0
+        },{
+          "value": true,
+          "status": 0
+        },{
+          "value": false,
+          "status": 0
+        },{
+          "value": true,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "dataType": "Int",
+      "dataName": "Int",
+      "timestampSource": "server",
+      "dataItems": [
+        {
+          "value": 1,
+          "status": 1
+        },{
+          "value": 2,
+          "status": 0
+        },{
+          "value": 3,
+          "status": 0
+        },{
+          "value": 4,
+          "status": 0
+        },{
+          "value": 5,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dataType": "Long",
+      "dataName": "Long",
+      "timestampSource": "server",
+      "dataItems": [
+        {
+          "value": 3554,
+          "status": 1
+        },{
+          "value": 534545,
+          "status": 0
+        },{
+          "value": 54345,
+          "status": 0
+        },{
+          "value": 432423543,
+          "status": 0
+        },{
+          "value": 54335345,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "dataType": "Double",
+      "dataName": "Double",
+      "timestampSource": "server",
+      "dataItems": [
+        {
+          "value": 1.6,
+          "status": 1
+        },{
+          "value": 4.6,
+          "status": 0
+        },{
+          "value": 34.1,
+          "status": 0
+        },{
+          "value": 2,
+          "status": 0
+        },{
+          "value": 0.7,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "dataType": "String",
+      "dataName": "String",
+      "timestampSource": "server",
+      "maxLength": 255,
+      "dataItems": [
+        {
+          "value": "vfdg",
+          "status": 1
+        },{
+          "value": "fdsfdsg",
+          "status": 0
+        },{
+          "value": "s",
+          "status": 0
+        },{
+          "value": "gdfsgfg",
+          "status": 0
+        },{
+          "value": "df",
+          "status": 1
+        }
+      ]
+    }
+  ]
+}

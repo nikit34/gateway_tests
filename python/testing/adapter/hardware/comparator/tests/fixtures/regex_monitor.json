@@ -1,0 +1,11 @@
+{
+    "route": "GET|PUT {\"([a-z]+)\"",
+    "name": "name: \"([a-zA-Z ]+)\"",
+    "dataItem": {
+        "timestamp": "timestamp: \"([0-9-T:.Z]+)\"",
+        "timestampSource": "timestampSource: \"([a-zA-Z0-9-T:.Z]+)\"",
+        "name": "name: \"([a-zA-Z]+)\"",
+        "value": "value: \"([a-zA-Z0-9-.]+)\"",
+        "status": "status: \"([01]+)\""
+    }
+}

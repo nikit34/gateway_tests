@@ -1,0 +1,24 @@
+[ req ]
+default_bits       = 2048
+encrypt_key        = no
+default_md         = sha256
+x509_extensions    = req_x509_extensions
+prompt             = no
+distinguished_name = req_distinguished_name
+
+[ req_distinguished_name ]
+C  = RU
+ST = Moscow
+L  = Moscow
+O  = Adaptive Production Technology, LLC
+OU = IT
+CN = KISG 100 (Example)
+
+[ req_x509_extensions ]
+basicConstraints = critical,CA:false,pathlen:0
+extendedKeyUsage = critical,clientAuth
+keyUsage         = critical,digitalSignature,nonRepudiation,keyEncipherment,dataEncipherment,keyCertSign
+subjectAltName   = URI:urn:aprotech:KISG100:OpcUaClient
+
+# NOTE: urn:aprotech:KISG100:OpcUaClient URI is used by the OPC UA Client
+# in the validation procedure.

@@ -1,0 +1,36 @@
+{
+    "id": 0,
+    "name": "MQTT Demo Publisher",
+    "description": "Gateway Development (Example)",
+    "clientId": "DevelopmentExample0",
+    "serverUri": "tcp://192.168.66.52:1883",
+    "userCredentials": null,
+    "lastWill": null,
+    "topics": [
+        {
+            "id": 0,
+            "name": "Boolean",
+            "topicName": "Boolean"
+        },
+        {
+            "id": 1,
+            "name": "Int",
+            "topicName": "Int"
+        },
+        {
+            "id": 2,
+            "name": "Long",
+            "topicName": "Long"
+        },
+        {
+            "id": 3,
+            "name": "Double",
+            "topicName": "Double"
+        },
+        {
+            "id": 4,
+            "name": "String",
+            "topicName": "String"
+        }
+    ]
+}

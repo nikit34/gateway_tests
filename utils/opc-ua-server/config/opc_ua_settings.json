@@ -1,0 +1,48 @@
+{
+  "id": 0,
+  "name": "OPC UA Demo Client",
+  "description": "Gateway Development (Example)",
+  "url": "opc.tcp://192.168.65.192:4840",
+  "readingCycle": 1,
+  "security": {
+    "mode": "Any",
+    "policy": "Any",
+    "clientPkiData": {
+      "certificate": "client.crt",
+      "privateKey": "client.key"
+    },
+    "trustList": "AllowAll"
+  },
+  "heartbeat": null,
+  "userCredentials": {
+    "username":  "user",
+    "password": "password"
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Boolean",
+      "nodeId": "ns=2;s=Boolean"
+    },
+    {
+      "id": 1,
+      "name": "Int",
+      "nodeId": "ns=2;s=Int"
+    },
+    {
+      "id": 2,
+      "name": "Long",
+      "nodeId": "ns=2;s=Long"
+    },
+    {
+      "id": 3,
+      "name": "Double",
+      "nodeId": "ns=2;s=Double"
+    },
+    {
+      "id": 4,
+      "name": "String",
+      "nodeId": "ns=2;s=String"
+    }
+  ]
+}

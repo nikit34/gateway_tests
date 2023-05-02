@@ -1,0 +1,12 @@
+{
+  "username": "api",
+  "password": "yV2kw6CMZ1KL9df6dw4N",
+  "ip_address": "192.168.65.2",
+  "plaintext_login": true,
+  "use_ssl": true,
+  "ssl_verify": false,
+  "ssl_verify_hostname": false,
+  "resource": "/interface/ethernet",
+  "reset_interval": 0.1,
+  "interface": "ether8"
+}

@@ -1,0 +1,18 @@
+{
+  "valid": {
+    "cert": "openssl req -x509 -days 365 -config {fixtures_path}openssl.{type}.cnf -keyout {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.crt -outform {fmt}",
+    "key": "openssl rsa -inform PEM -outform DER -in {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.key"
+  },
+  "old": {
+    "cert": "faketime '2008-12-24 08:15:42' openssl req -x509 -days 365 -config {fixtures_path}openssl.{type}.cnf -keyout {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.crt -outform {fmt}",
+    "key": "faketime '2008-12-24 08:15:42' openssl rsa -inform PEM -outform DER -in {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.key"
+  },
+  "bad": {
+    "cert": "openssl req -x509 -days 365 -config {fixtures_path}openssl.{type}.cnf -keyout {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.crt -outform {fmt} -subj \"/C=RU/ST=Moscow/L=Moscow/O=Adaptive Production Technology, LLC/OU=IT/CN=KISG1000 (Example)\" -addext \"subjectAltName = URI:urn:aprotech:KISG1000:OpcUaClient\"",
+    "key": "openssl rsa -inform PEM -outform DER -in {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.key"
+  },
+  "short": {
+    "cert": "openssl req -x509 -days 365 -config {fixtures_path}openssl.{type}.cnf -keyout {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.crt -outform {fmt} -newkey rsa:1024",
+    "key": "openssl rsa -inform PEM -outform DER -in {fixtures_path}{output_dir}{output_name}.key -out {fixtures_path}{output_dir}{output_name}.key"
+  }
+}

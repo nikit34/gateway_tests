@@ -1,0 +1,768 @@
+[
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_0"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_1"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_2"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_3"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_4"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_5"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_6"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_7"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_8"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_9"
+    ],
+    [
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Rejecting endpoint 0: security mode doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_10"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_11"
+    ],
+    [
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Rejecting endpoint 0: security mode doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_12"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_13"
+    ],
+    [
+        {
+            "mode": "None",
+            "policy": "None",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "None",
+            "policy": "None",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": "AllowAll"
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = valid_der_client.(crt|key))"
+        ],
+        "test_security_14"
+    ],
+    [
+        {
+            "mode": "None",
+            "policy": "None",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "None",
+            "policy": "None",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_15"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))"
+        ],
+        "test_security_16"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_17"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 2: configuration doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))",
+            "The configured ApplicationURI does not match the URI specified in the certificate for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#(Basic128Rsa15|Basic256Sha256|Basic256|Aes128_Sha256_RsaOaep)"
+        ],
+        "test_security_18"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Receiving the response failed with StatusCode BadCertificateUntrusted",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 2: configuration doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_19"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 0: configuration doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))",
+            "The configured ApplicationURI does not match the URI specified in the certificate for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#(Basic128Rsa15|Basic256Sha256|Basic256|Aes128_Sha256_RsaOaep)"
+        ],
+        "test_security_20"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Any",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode Sign and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 0: configuration doesn't match",
+            "Receiving the response failed with StatusCode BadCertificateUntrusted"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_21"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 1: configuration doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))",
+            "The configured ApplicationURI does not match the URI specified in the certificate for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#(Basic128Rsa15|Basic256Sha256|Basic256|Aes128_Sha256_RsaOaep)"
+        ],
+        "test_security_22"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 1: configuration doesn't match",
+            "Receiving the response failed with StatusCode BadCertificateUntrusted"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key))])"
+        ],
+        "test_security_23"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))",
+            "The configured ApplicationURI does not match the URI specified in the certificate for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#(Basic128Rsa15|Basic256Sha256|Basic256|Aes128_Sha256_RsaOaep)"
+        ],
+        "test_security_24"
+    ],
+    [
+        {
+            "mode": "Any",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "Any",
+            "policy": "Any",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [
+            "Selected UserTokenPolicy username with UserTokenType UserName and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Selected Endpoint opc.tcp://get_globalhost_ip():4840 with SecurityMode SignAndEncrypt and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#Basic256Sha256",
+            "Receiving the response failed with StatusCode BadCertificateUntrusted",
+            "Rejecting UserTokenPolicy 0 (anonymous) in endpoint 0: configuration doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_25"
+    ],
+    [
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [
+            "Rejecting endpoint 0: security mode doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))",
+            "The configured ApplicationURI does not match the URI specified in the certificate for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#(Basic128Rsa15|Basic256Sha256|Basic256|Aes128_Sha256_RsaOaep)"
+
+        ],
+        "test_security_26"
+    ],
+    [
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [
+            "Rejecting endpoint 0: security mode doesn't match"
+        ],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_27"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "security_pair_name": "valid_der_server"
+        },
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "bad_der_client.crt",
+                "privateKey": "bad_der_client.key"
+            },
+            "trustList": [
+                "valid_der_server.crt"
+            ]
+        },
+        [],
+        [
+            "Getting object from the PKI Data Manager storage (id = (valid_der_server.crt|bad_der_client.(crt|key)))",
+            "The configured ApplicationURI does not match the URI specified in the certificate for the SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#(Basic128Rsa15|Basic256Sha256|Basic256|Aes128_Sha256_RsaOaep)"
+        ],
+        "test_security_28"
+    ],
+    [
+        {
+            "mode": "Sign",
+            "policy": "Basic256",
+            "security_pair_name": "bad_der_server"
+        },
+        {
+            "mode": "SignAndEncrypt",
+            "policy": "Basic256Sha256",
+            "clientPkiData": {
+                "certificate": "valid_der_client.crt",
+                "privateKey": "valid_der_client.key"
+            },
+            "trustList": [
+                "bad_der_server.crt"
+            ]
+        },
+        [],
+        [
+            "Getting object from the PKI Data Manager storage (id = (bad_der_server.crt|valid_der_client.(crt|key)))"
+        ],
+        "test_security_29"
+    ]
+]

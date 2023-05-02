@@ -1,0 +1,126 @@
+{
+  "commonInterval": 2,
+  "dataPoints": [
+    {
+      "id": 0,
+      "dataType": "Boolean",
+      "dataName": "Boolean",
+      "dataItems": [
+        {
+          "value": true,
+          "timestamp": "2021-05-13T09:50:55.940Z"
+        },{
+          "value": false,
+          "timestamp": "2021-05-13T09:51:56.941Z"
+        },{
+          "value": true,
+          "timestamp": "2021-05-14T09:52:57.942Z"
+        },{
+          "value": false,
+          "timestamp": "2021-05-14T09:53:58.943Z"
+        },{
+          "value": true,
+          "timestamp": "2021-05-14T09:54:59.944Z"
+        }
+      ],
+      "sleepInterval": 1
+    },
+    {
+      "id": 1,
+      "dataType": "Int",
+      "dataName": "Int",
+      "dataItems": [
+        {
+          "value": 1,
+          "timestamp": "2021-05-13T09:50:55.940Z"
+        },{
+          "value": 2,
+          "timestamp": "2021-05-13T09:51:56.941Z"
+        },{
+          "value": 3,
+          "timestamp": "2021-05-14T09:52:57.942Z"
+        },{
+          "value": 4,
+          "timestamp": "2021-05-14T09:53:58.943Z"
+        },{
+          "value": 5,
+          "timestamp": "2021-05-14T09:54:59.944Z"
+        }
+      ],
+      "sleepInterval": 0
+    },
+    {
+      "id": 2,
+      "dataType": "Long",
+      "dataName": "Long",
+      "dataItems": [
+        {
+          "value": 3554,
+          "timestamp": "2021-05-13T09:50:55.940Z"
+        },{
+          "value": 534545,
+          "timestamp": "2021-05-13T09:51:56.941Z"
+        },{
+          "value": 54345,
+          "timestamp": "2021-05-14T09:52:57.942Z"
+        },{
+          "value": 432423543,
+          "timestamp": "2021-05-14T09:53:58.943Z"
+        },{
+          "value": 54335345,
+          "timestamp": "2021-05-14T09:54:59.944Z"
+        }
+      ],
+      "sleepInterval": 2
+    },
+    {
+      "id": 3,
+      "dataType": "Double",
+      "dataName": "Double",
+      "dataItems": [
+        {
+          "value": 1.6,
+          "timestamp": "2021-05-13T09:50:55.940Z"
+        },{
+          "value": 4.6,
+          "timestamp": "2021-05-13T09:51:56.941Z"
+        },{
+          "value": 34.1,
+          "timestamp": "2021-05-14T09:52:57.942Z"
+        },{
+          "value": 2,
+          "timestamp": "2021-05-14T09:53:58.943Z"
+        },{
+          "value": 0.7,
+          "timestamp": "2021-05-14T09:54:59.944Z"
+        }
+      ],
+      "sleepInterval": 4
+    },
+    {
+      "id": 4,
+      "dataType": "String",
+      "dataName": "String",
+      "maxLength": 255,
+      "dataItems": [
+        {
+          "value": "vfdg",
+          "timestamp": "2021-05-13T09:50:55.940Z"
+        },{
+          "value": "fdsfdsg",
+          "timestamp": "2021-05-13T09:51:56.941Z"
+        },{
+          "value": "s",
+          "timestamp": "2021-05-14T09:52:57.942Z"
+        },{
+          "value": "gdfsgfg",
+          "timestamp": "2021-05-14T09:53:58.943Z"
+        },{
+          "value": "df",
+          "timestamp": "2021-05-14T09:54:59.944Z"
+        }
+      ],
+      "sleepInterval": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "broadcast": "255.255.255.255",
+  "DHCPServer": "192.168.65.8",
+  "LeaseTime": 60,
+  "ThreadLimit": 1,
+  "defaultMask": "255.255.255.0",
+  "defaultRouter": "192.168.65.0",
+  "defaultDNS": "8.8.8.8",
+  "options": [
+    "option_82_hex:sw_port1:20:22",
+    "option_82_hex:sw_port2:16:18",
+    "option_82_hex:sw_mac:26:40"
+  ]
+}

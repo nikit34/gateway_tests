@@ -1,0 +1,5 @@
+{
+  "serialAddress": "/dev/ttyUSB0",
+  "serialBaudrate": 115200,
+  "serialTimeout": 1
+}
